@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+    
+    
+    <TextView android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_margin="12dip"
+    android:textSize="18dip"
+    android:gravity="center_horizontal"
+    android:text="welcome to supsms! please login" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="3dp"
+        android:text="username:"
+        android:textSize="28dp" />
+  
+    <EditText
+        android:id="@+id/ausername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/txtname"
+        android:hint="please input username" />
+
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="password:"
+        android:textSize="28dp" />
+  
+    <EditText
+        android:id="@+id/apassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ausername"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/txtpassword"
+        android:hint="please input password"
+        android:inputType="textPassword" />
+
+    
+  
+    <LinearLayout   
+        android:layout_below="@id/apassword"  
+        android:orientation="horizontal"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="30dp"  
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/loginbutten"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:onClick="login"
+            android:text="login"
+            android:textSize="18dip" />
+  
+      </LinearLayout>
+  
+</LinearLayout>

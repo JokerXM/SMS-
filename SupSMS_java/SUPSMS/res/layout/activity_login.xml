@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" 
+    >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:text="login successful ! welcome!"
+        android:textColor="#8a2be2"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+     <Button
+         android:id="@+id/backupcontacts"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/backupsms"
+         android:layout_alignParentLeft="true"
+         android:text="backupcontact"
+         android:onClick="backupcontacts"
+         android:textSize="18dip" />
+
+     <Button
+         android:id="@+id/backupsms"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignTop="@+id/linearLayout1"
+         android:text="backupsms"
+         android:onClick="backupsms"
+         android:textSize="18dip" />
+
+     <Button
+         android:id="@+id/logoutbutten"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/backupsms"
+         android:text="logout"
+         android:onClick="logout"
+         android:textSize="18dip" />
+
+</RelativeLayout>
